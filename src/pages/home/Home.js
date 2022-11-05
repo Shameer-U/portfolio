@@ -5,18 +5,20 @@ const Home = () => {
   return (
     <>
        <section className="banner">
-            <div className="container">
-                <div className="banner-content">
-                    <div className="text-1">Hello, my name is</div>
-                    <div className="text-2">Shameer U Shahul</div>
-                    <div className="text-3">And I'm a Web Developer</div>
+            <div className='mask'>
+                <div className="container">
+                    <div className="banner-content">
+                        <div className="text-1">Hello, my name is</div>
+                        <div className="text-2">Shameer U Shahul</div>
+                        <div className="text-3">and I'm a Web Developer</div>
+                    </div>
                 </div>
             </div>
         </section>
 
         <section className="about">
             <div className="container">
-                <div className="about-title">
+                <div className="title">
                     <h2>About me</h2>
                 </div>
                 <div className="about-content">
@@ -33,10 +35,10 @@ const Home = () => {
 
         <section className="skills">
             <div className="container">
-                <div className="skills-title">
+                <div className="title">
                     <h2>Skills (or skills & experiences)</h2>
                 </div>
-                <div class="skills-content"> 
+                <div className="skills-content"> 
                      <div><img src={my} width="20px" height="20px"/> <span>ReactJS</span></div>
                      <div><img src={my} width="20px" height="20px"/> <span>JAVASCRIPT</span></div>
                      <div><img src={my} width="20px" height="20px"/> <span>HTML</span></div>
@@ -48,7 +50,7 @@ const Home = () => {
 
         <section className="projects">
             <div className="container">
-                <div class="projects-title">
+                <div className="title">
                     <h2>Projects</h2>
                 </div>
                 <div className="projects-content"> 
@@ -57,6 +59,7 @@ const Home = () => {
                         <div className="project-details">
                             <h4>App name</h4>
                             <p> sort description</p>
+                            <p> Technologies / Tools used : ReactJS, Redux, JavaScript, CSS </p>
                             <div className="links">
                                 <a href="#">View demo</a>
                                 <a href="#">View code</a>
@@ -102,20 +105,20 @@ const Home = () => {
 
         <section className="contact">
             <div className="container">
-                <div className="contact-title">
+                <div className="title">
                     <h2>Contact</h2>
                 </div>
-                <div class="contact-content"> 
-                    <div class="contact-detail">
-                        <i class="fas fa-user"></i>
+                <div className="contact-content"> 
+                    <div className="contact-detail">
+                        <i className="fas fa-user"></i>
                         <div>Shameer U Shahul</div>
                     </div>
-                    <div class="contact-detail">
-                        <i class="fas fa-map-marker-alt"></i>
+                    <div className="contact-detail">
+                        <i className="fas fa-map-marker-alt"></i>
                         <div>Ullattil, S.Bathery</div>
                     </div>
-                    <div class="contact-detail">
-                        <i class="fas fa-envelope"></i>
+                    <div className="contact-detail">
+                        <i className="fas fa-envelope"></i>
                         <div>shameer@gmail.com</div>
                     </div>
                 </div>

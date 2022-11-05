@@ -1,10 +1,29 @@
+.title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.title h2 {
+    padding: 20px 0;
+    font-size: 35px;
+}
+
 .banner {
-    padding: 30px 10px;
     background: url('../../images/banner.jpg') no-repeat center;
+    background-size: cover;
     height: 100vh;
     color: #fff;
     min-height: 500px;
-    background-size: cover;
+}
+
+.banner .mask {
+    width: 100%;
+    height: 100%;
+    padding: 30px 10px;
+    /* background-color: hsla(0, 0%, 0% , 0.3); */
+    background-color: rgba(0, 0, 0, 0.3);
     display: flex;
     align-items: center;
 }
@@ -13,33 +32,26 @@
     width: 100%;
 }
 
-.banner .banner-content .text-1{
+.banner .banner-content .text-1 {
     font-size: 27px;
 }
-.banner .banner-content .text-2{
+
+.banner .banner-content .text-2 {
     font-size: 75px;
     font-weight: 600;
+    text-shadow: 4px 2px 5px #000;
 }
-.banner .banner-content .text-3{
+
+.banner .banner-content .text-3 {
     font-size: 40px;
 }
 
 .about {
-    padding: 30px 10px;
+    padding: 50px 10px;
 }
 
 .about .container {
     width: 100%;
-}
-
-.about-title{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.about-title h2 {
-    padding: 20px 0;
 }
 
 .about .about-content {
@@ -50,20 +62,21 @@
     column-gap : 50px;
 }
 
-.about-content .left{
+.about-content .left {
     width: 300px;
     height: 300px;
 } 
 
-.about-content .right{
+.about-content .right {
     flex: 1;
 }
 
-.about-content .left img{
+.about-content .left img {
     width: 100%;
     height: 100%;
     object-fit: cover;
     border-radius: 50%;
+    border: 5px solid crimson;
 }
 
 .about-content .right p {
@@ -73,39 +86,29 @@
 .about-content .right a {
     display: inline-block;
     background: none;
-    color: red;
+    color: crimson;
     font-size: 20px;
     font-weight: 500;
     padding: 10px 30px;
     margin-top: 20px;
     border-radius: 6px;
-    border: 2px solid red;
+    border: 2px solid crimson;
     transition: all 0.3s ease;
 }
 
-.about-content .right a:hover{
+.about-content .right a:hover {
     color: #fff;
-    background: red;
+    background: crimson;
 }
 
 .skills {
-    padding: 30px 10px;
-    background-color: black;
+    padding: 50px 10px;
+    background-color: #222;
     color: #fff;
 }
 
 .skills .container {
     width: 100%;
-}
-
-.skills-title{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.skills-title h2 {
-    padding: 20px 0;
 }
 
 .skills .skills-content {
@@ -117,17 +120,7 @@
 }
 
 .projects {
-    padding: 30px 10px;
-}
-
-.projects-title{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.projects-title h2 {
-    padding: 20px 0;
+    padding: 50px 10px;
 }
 
 .projects .projects-content {
@@ -141,7 +134,7 @@
 .project {
     max-width: 400px;
     border-radius: 10px;
-    border: 1px solid #111;
+    border: 1px solid #222;
     overflow: hidden;
 }
 
@@ -152,7 +145,7 @@
 }
 
 .project .project-details {
-    height: 150px;
+    height: 200px;
     padding: 10px;
     display: flex;
     flex-direction: column;
@@ -170,33 +163,23 @@
 .projects-content .project a {
     display: inline-block;
     background: none;
-    color: red;
-    font-weight: 300;
-    padding: 5px 20px;
+    color: crimson;
+    font-size: 14px;
+    padding: 5px;
     border-radius: 6px;
-    border: 2px solid red;
+    border: 2px solid crimson;
     transition: all 0.3s ease;
 }
 
-.projects-content .project a:hover{
+.projects-content .project a:hover {
     color: #fff;
-    background: red;
+    background: crimson;
 }
 
 .contact {
-    padding: 30px 10px;
-    background-color: #111;
+    padding: 50px 10px;
+    background-color: #222;
     color: #fff;
-}
-
-.contact-title{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.contact-title h2 {
-    padding: 20px 0;
 }
 
 .contact .contact-content {
@@ -207,4 +190,10 @@
     justify-content: space-between;
     align-items: center;
     gap : 20px;
+}
+
+.contact-detail {
+    display: flex;
+    gap: 10px;
+    align-items: center;
 }

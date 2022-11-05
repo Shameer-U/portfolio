@@ -1,8 +1,19 @@
 import './header.css';
+import { useEffect, useState } from 'react';
 
 const Header = () => {
+  const [isScrolled, setIsScrolled] = useState(false);
+
+  useEffect(() => {
+    window.onscroll = () => {
+      window.pageYOffset == 0 ? setIsScrolled(false) : setIsScrolled(true);
+    }
+
+    return () => (window.onscroll = null);
+  },[])
+
   return (
-    <nav className="navbar">
+    <nav className={isScrolled ? "navbar scrolled" : "navbar"}>
         <div className="container">
             <div className="logo">Portfolio</div>
             <ul className="nav-links">

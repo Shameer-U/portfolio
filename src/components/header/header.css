@@ -1,9 +1,15 @@
 .navbar {
-    padding: 30px 10px;
-    background: red;
     position: fixed;
     width: 100%;
     z-index: 999;
+    background: transparent;
+    padding: 30px 10px;
+    transition: all 0.3s ease;
+}
+
+.navbar.scrolled {
+    background: crimson;
+    padding: 15px 10px;
 }
 
 .navbar .container {
@@ -32,8 +38,8 @@
 
 .nav-links li a {
     color: #fff;
-    font-size: 16px;
-    font-weight: 300;
+    font-size: 18px;
+    font-weight: 500;
 }
 
 .nav-btn {
