@@ -6,9 +6,13 @@
     box-sizing: border-box;
 }
 
+html{
+    scroll-behavior: smooth; 
+}
+
 body {
     font-family: 'Poppins', sans-serif;
-    background-color: rgb(240, 234, 234);
+    background-color: #FFFFF0;
 }
 
 a {

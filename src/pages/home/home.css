@@ -81,15 +81,17 @@
 
 .about-content .right p {
     line-height: 1.5;
+    text-align: justify;
+    text-justify: inter-word;
 }
 
 .about-content .right a {
     display: inline-block;
     background: none;
     color: crimson;
-    font-size: 20px;
+    font-size: 16px;
     font-weight: 500;
-    padding: 10px 30px;
+    padding: 10px 20px;
     margin-top: 20px;
     border-radius: 6px;
     border: 2px solid crimson;
@@ -103,8 +105,7 @@
 
 .skills {
     padding: 50px 10px;
-    background-color: #222;
-    color: #fff;
+    background-color: #f2f2f2;
 }
 
 .skills .container {
@@ -116,7 +117,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap : 10px;
+    gap : 20px;
 }
 
 .projects {
@@ -178,12 +179,16 @@
 
 .contact {
     padding: 50px 10px;
-    background-color: #222;
-    color: #fff;
+    background-color: #f2f2f2;
 }
 
 .contact .contact-content {
-    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.contact-detail {
+    max-width: 400px;
     height: 150px;
     display: flex;
     flex-direction: column;
@@ -192,7 +197,7 @@
     gap : 20px;
 }
 
-.contact-detail {
+.contact-detail .info {
     display: flex;
     gap: 10px;
     align-items: center;

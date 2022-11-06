@@ -1,5 +1,6 @@
 import './home.css';
-import my from'../../images/banner.jpg'
+import my from'../../images/banner.jpg';
+import { FaMapMarkerAlt, FaUserAlt, FaEnvelope, FaPhoneAlt } from "react-icons/fa";
 
 const Home = () => {
   return (
@@ -16,10 +17,10 @@ const Home = () => {
             </div>
         </section>
 
-        <section className="about">
+        <section className="about" id="about">
             <div className="container">
                 <div className="title">
-                    <h2>About me</h2>
+                    <h2>About</h2>
                 </div>
                 <div className="about-content">
                     <div className="left">
@@ -33,22 +34,23 @@ const Home = () => {
             </div>
         </section>
 
-        <section className="skills">
+        <section className="skills" id="skills">
             <div className="container">
                 <div className="title">
-                    <h2>Skills (or skills & experiences)</h2>
+                    <h2>Skills (or Skills & Experiences)</h2>
                 </div>
                 <div className="skills-content"> 
                      <div><img src={my} width="20px" height="20px"/> <span>ReactJS</span></div>
-                     <div><img src={my} width="20px" height="20px"/> <span>JAVASCRIPT</span></div>
+                     <div><img src={my} width="20px" height="20px"/> <span>JavaScript</span></div>
+                     <div><img src={my} width="20px" height="20px"/> <span>Redux</span></div>
+                     <div><img src={my} width="20px" height="20px"/> <span>SASS</span></div>
                      <div><img src={my} width="20px" height="20px"/> <span>HTML</span></div>
                      <div><img src={my} width="20px" height="20px"/> <span>CSS</span></div>
-                     <div><img src={my} width="20px" height="20px"/> <span>SASS</span></div>
                 </div>
             </div>
         </section>
 
-        <section className="projects">
+        <section className="projects" id="projects">
             <div className="container">
                 <div className="title">
                     <h2>Projects</h2>
@@ -58,8 +60,11 @@ const Home = () => {
                         <img src={my} />
                         <div className="project-details">
                             <h4>App name</h4>
-                            <p> sort description</p>
-                            <p> Technologies / Tools used : ReactJS, Redux, JavaScript, CSS </p>
+                            <p> Short description</p>
+                            <div>
+                                <p>Technologies / Tools used :</p>
+                                <p>ReactJS, Redux, JavaScript, CSS </p>
+                            </div>
                             <div className="links">
                                 <a href="#">View demo</a>
                                 <a href="#">View code</a>
@@ -70,7 +75,7 @@ const Home = () => {
                         <img src={my} />
                         <div className="project-details">
                             <h4>App name</h4>
-                            <p> sort description</p>
+                            <p> short description</p>
                             <div className="links">
                                 <a href="#">View demo</a>
                                 <a href="#">View code</a>
@@ -81,7 +86,7 @@ const Home = () => {
                         <img src={my} />
                         <div className="project-details">
                             <h4>App name</h4>
-                            <p> sort description</p>
+                            <p> short description</p>
                             <div className="links">
                                 <a href="#">View demo</a>
                                 <a href="#">View code</a>
@@ -92,7 +97,10 @@ const Home = () => {
                         <img src={my} />
                         <div className="project-details">
                             <h4>App name</h4>
-                            <p> sort description</p>
+                            <p> short description</p>
+                            <div>
+                                <p> </p>
+                            </div>
                             <div className="links">
                                 <a href="#">View demo</a>
                                 <a href="#">View code</a>
@@ -103,24 +111,30 @@ const Home = () => {
             </div>
         </section>
 
-        <section className="contact">
+        <section className="contact" id="contact">
             <div className="container">
                 <div className="title">
                     <h2>Contact</h2>
                 </div>
-                <div className="contact-content"> 
+                <div className="contact-content">
                     <div className="contact-detail">
-                        <i className="fas fa-user"></i>
-                        <div>Shameer U Shahul</div>
-                    </div>
-                    <div className="contact-detail">
-                        <i className="fas fa-map-marker-alt"></i>
-                        <div>Ullattil, S.Bathery</div>
-                    </div>
-                    <div className="contact-detail">
-                        <i className="fas fa-envelope"></i>
-                        <div>shameer@gmail.com</div>
-                    </div>
+                        <div className="info">
+                            <FaUserAlt />
+                            <div>Shameer U Shahul</div>
+                        </div>
+                        <div className="info">
+                            <FaMapMarkerAlt />
+                            <div>Ullattil (H), Sulthan Bathery, Wayanad, Kerala, India, 673 592</div>
+                        </div>
+                        <div className="info">
+                            <FaEnvelope />
+                            <div>shameer@gmail.com</div>
+                        </div>
+                        <div className="info">
+                            <FaPhoneAlt />
+                            <div>9539311252</div>
+                        </div>
+                    </div> 
                 </div>
             </div>
         </section>
