@@ -1,5 +1,11 @@
 import './home.css';
-import my from'../../images/banner.jpg';
+import bannerImg from'../../images/banner.jpg';
+import reactLogo from'../../logos/react.png';
+import reduxLogo from'../../logos/redux.png';
+import javaScriptLogo from'../../logos/javascript.png';
+import htmlLogo from'../../logos/html.png';
+import cssLogo from'../../logos/css.png';
+import sassLogo from'../../logos/sass.png';
 import { FaMapMarkerAlt, FaUserAlt, FaEnvelope, FaPhoneAlt } from "react-icons/fa";
 
 const Home = () => {
@@ -24,7 +30,7 @@ const Home = () => {
                 </div>
                 <div className="about-content">
                     <div className="left">
-                        <img src={my} alt="" />
+                        <img src={bannerImg} alt="" />
                     </div>
                     <div className="right">
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi ut voluptatum eveniet doloremque autem excepturi eaque, sit laboriosam voluptatem nisi delectus. Facere explicabo hic minus accusamus alias fuga nihil dolorum quae. Explicabo illo unde, odio consequatur ipsam possimus veritatis, placeat, ab molestiae velit inventore exercitationem consequuntur blanditiis omnis beatae. Dolor iste excepturi ratione soluta quas culpa voluptatum repudiandae harum non.</p>
@@ -40,12 +46,12 @@ const Home = () => {
                     <h2>Skills (or Skills & Experiences)</h2>
                 </div>
                 <div className="skills-content"> 
-                     <div><img src={my} width="20px" height="20px"/> <span>ReactJS</span></div>
-                     <div><img src={my} width="20px" height="20px"/> <span>JavaScript</span></div>
-                     <div><img src={my} width="20px" height="20px"/> <span>Redux</span></div>
-                     <div><img src={my} width="20px" height="20px"/> <span>SASS</span></div>
-                     <div><img src={my} width="20px" height="20px"/> <span>HTML</span></div>
-                     <div><img src={my} width="20px" height="20px"/> <span>CSS</span></div>
+                     <div><img src={reactLogo} width="50px" height="50px" className="skill-logo"/> <span className="skill-name">ReactJS</span></div>
+                     <div><img src={reduxLogo} width="20px" height="20px" className="skill-logo"/> <span className="skill-name">Redux</span></div>
+                     <div><img src={javaScriptLogo} width="20px" height="20px" className="skill-logo"/> <span className="skill-name">JavaScript</span></div>
+                     <div><img src={htmlLogo} width="20px" height="20px" className="skill-logo"/> <span className="skill-name">HTML</span></div>
+                     <div><img src={cssLogo} width="20px" height="20px" className="skill-logo"/> <span className="skill-name">CSS</span></div>
+                     <div><img src={sassLogo} width="20px" height="20px" className="skill-logo"/> <span className="skill-name">Sass</span></div>
                 </div>
             </div>
         </section>
@@ -57,7 +63,7 @@ const Home = () => {
                 </div>
                 <div className="projects-content"> 
                      <div className="project">
-                        <img src={my} />
+                        <img src={bannerImg} />
                         <div className="project-details">
                             <h4>App name</h4>
                             <p> Short description</p>
@@ -72,7 +78,7 @@ const Home = () => {
                         </div>
                      </div>
                      <div className="project">
-                        <img src={my} />
+                        <img src={bannerImg} />
                         <div className="project-details">
                             <h4>App name</h4>
                             <p> short description</p>
@@ -83,7 +89,7 @@ const Home = () => {
                         </div>
                      </div>
                      <div className="project">
-                        <img src={my} />
+                        <img src={bannerImg} />
                         <div className="project-details">
                             <h4>App name</h4>
                             <p> short description</p>
@@ -94,7 +100,7 @@ const Home = () => {
                         </div>
                      </div>
                      <div className="project">
-                        <img src={my} />
+                        <img src={bannerImg} />
                         <div className="project-details">
                             <h4>App name</h4>
                             <p> short description</p>
@@ -128,11 +134,11 @@ const Home = () => {
                         </div>
                         <div className="info">
                             <FaEnvelope />
-                            <div>shameer@gmail.com</div>
+                            <div>shameerushahul@gmail.com</div>
                         </div>
                         <div className="info">
                             <FaPhoneAlt />
-                            <div>9539311252</div>
+                            <div>9539311252, 7907689151</div>
                         </div>
                     </div> 
                 </div>

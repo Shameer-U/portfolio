@@ -105,7 +105,8 @@
 
 .skills {
     padding: 50px 10px;
-    background-color: #f2f2f2;
+    background-color: #111;
+    color: #fff;
 }
 
 .skills .container {
@@ -118,6 +119,23 @@
     justify-content: center;
     align-items: center;
     gap : 20px;
+}
+
+.skills-content .skill-logo {
+    width: 50px;
+    height: 50px;
+}
+
+.skills-content .skill-name {
+    font-size: 20px;
+}
+
+.skills-content div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 20px;
+    row-gap: 20px;
 }
 
 .projects {
@@ -137,6 +155,11 @@
     border-radius: 10px;
     border: 1px solid #222;
     overflow: hidden;
+}
+
+.project:hover {
+    transform: scale(1.05);
+    transition: all 0.3s ease;
 }
 
 .projects-content .project img {
@@ -179,7 +202,8 @@
 
 .contact {
     padding: 50px 10px;
-    background-color: #f2f2f2;
+    background-color: #111;
+    color: #fff;
 }
 
 .contact .contact-content {
@@ -189,7 +213,6 @@
 
 .contact-detail {
     max-width: 400px;
-    height: 150px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -201,4 +224,8 @@
     display: flex;
     gap: 10px;
     align-items: center;
+}
+
+.contact-detail .info svg { 
+    color: crimson;
 }
