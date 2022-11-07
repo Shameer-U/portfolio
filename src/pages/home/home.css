@@ -229,3 +229,32 @@
 .contact-detail .info svg { 
     color: crimson;
 }
+
+@media(max-width:768px) {
+    .banner .banner-content .text-1 {
+        font-size: 18px;
+    }
+
+    .banner .banner-content .text-2 {
+        font-size: 50px;
+    }
+
+    .banner .banner-content .text-3 {
+        font-size: 20px;
+    }
+
+    .about .about-content {
+        justify-content: center;
+        row-gap: 20px;
+    }
+
+    .about-content .right {
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+    }
+
+    .projects .projects-content {
+        justify-content: center;
+    }
+}
