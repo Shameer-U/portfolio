@@ -1,3 +1,74 @@
+.main-container {
+    display: flex;
+}
+
+.side-section {
+    width: 25%;
+    background-color: #111;
+    position: sticky;
+    top: 0;
+    height: 100%;
+}
+
+.main-section {
+    width:75%;
+}
+
+.sidebar {
+    height: 100vh;
+}
+
+.sidebar .container {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.sidebar .container {
+    padding: 10px;
+}
+
+.profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.profile .img {
+    width: 150px;
+    height: 150px;
+}
+
+.profile .img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 5px solid crimson;
+}
+
+.profile  h2 {
+    color: #fff;
+}
+
+.profile  .important-link .link {
+    color: #fff;
+    height: 20px;
+    width: 20px;
+}
+
+.sidebar .container ul{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 10px;
+}
+
+.sidebar .container .links {
+    
+}
+
 .title {
     display: flex;
     justify-content: center;
@@ -13,6 +84,7 @@
 .banner {
     background: url('../../images/banner.jpg') no-repeat center;
     background-size: cover;
+    background-attachment: fixed;
     height: 100vh;
     color: #fff;
     min-height: 500px;
@@ -30,6 +102,8 @@
 
 .banner .container {
     width: 100%;
+    display: flex;
+    justify-content: center;
 }
 
 .banner .banner-content .text-1 {
