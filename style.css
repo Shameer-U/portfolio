@@ -251,13 +251,43 @@ a {
     padding: 10px 20px;
     background-color: crimson;
     color: #fff;
-    border-radius: 0 20px 20px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+
+.skill .circle {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background-color: #fff;
+    border-radius: 50%;
 }
 
 /*projects*/
 
 .projects {
     padding: 50px 10px;
+}
+
+.project-divider {
+    margin: 0 0 40px 0;
+    display: flex;
+    justify-content: center;
+}
+
+.project-links {
+    background-color: #fff;
+    border-radius: 20px;
+    padding: 10px 20px;
+    display: flex;
+    gap: 20px;
+    /* box-shadow: 0 1px 4px rgb(0,0,0,0.16); */
+}
+
+.project-links span {
+    font-size: 14px;
 }
 
 .projects .projects-content {
@@ -278,6 +308,7 @@ a {
     -webkit-box-shadow: 0px 4px 20px -6px rgba(0,0,0,0.75);
     -moz-box-shadow: 0px 4px 20px -6px rgba(0,0,0,0.75);
     box-shadow: 0px 4px 20px -6px rgb(0,0,0,0.75);
+    transition: all 0.3s ease;
 }
 
 .project:hover {
@@ -287,6 +318,7 @@ a {
 
 .projects-content .project img {
     width: 100%;
+    height: 200px;
     object-fit: cover;
     border-radius: 10px 10px 0 0;
 }
@@ -299,6 +331,11 @@ a {
     justify-content: space-between;
     gap: 10px;
     background-color: #fff;
+}
+
+.project .project-details .title {
+    display: flex;
+    justify-content: center;
 }
 
 .project .project-details p {
@@ -327,11 +364,69 @@ a {
     background: crimson;
 }
 
+.project.hide {
+    display: none;
+}
+
+/*services*/
+
+.services {
+    padding: 50px 10px;
+    background-color: #eeeeee;
+}
+
+.services .services-content {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    column-gap : 10px;
+    row-gap: 20px;
+}
+
+.services .services-content .item {
+    width: 300px;
+    height: 320px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    -webkit-box-shadow: 0px 4px 20px -6px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 4px 20px -6px rgba(0,0,0,0.75);
+    box-shadow: 0px 4px 20px -6px rgb(0,0,0,0.75);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.services .services-content .item:hover {
+    transform: scale(1.05);
+    transition: all 0.3s ease;
+}
+
+.services .services-content .item .circle {
+   display: inline-block;
+   width: 50px;
+   height: 50px;
+   border: 2px solid #111;
+   border-radius: 50%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.services .services-content .item .circle i {
+   font-size: 20px;
+}
+
+.services .services-content .item  p {
+    text-align: center;
+}
+
 /*contact*/
 
 .contact {
     padding: 50px 10px;
-    background-color: #eeeeee;
 }
 
 .contact .contact-content {
@@ -353,10 +448,15 @@ a {
     align-items: center;
 }
 
-.contact-detail .info i{
-    padding: 10px;
+.contact-detail .info .circle {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
     border: 2px solid #111;
     border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 @media(max-width:768px) {
@@ -385,5 +485,9 @@ a {
 
     .projects .projects-content {
         justify-content: center;
+    }
+
+    .side-section {
+        width: 100%;
     }
 }
