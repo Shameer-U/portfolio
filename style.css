@@ -47,6 +47,10 @@ a {
     gap: 30px;
 }
 
+.sidebar .container .close-btn {
+    display: none;
+}
+
 .profile {
     display: flex;
     flex-direction: column;
@@ -98,7 +102,7 @@ a {
     padding-left: 30px;
 }
 
-.sidebar .nav-links ul{
+.sidebar .nav-links ul {
     display: flex;
     flex-direction: column;
     align-items: start;
@@ -106,8 +110,16 @@ a {
     list-style-type: none;
 }
 
-.sidebar .nav-links ul a{
-   color: #fff;
+.sidebar .nav-links ul a {
+   color: #a8a9b4;
+}
+
+.sidebar .nav-links ul a:hover {
+    color: #fff;
+}
+
+.sidebar .nav-links .nav-link.active a {
+    color: #fff;
 }
 
 .sidebar .nav-links ul a span{
@@ -118,6 +130,11 @@ a {
 
 .main-section {
     margin-left: 300px;
+}
+
+/*navbar section*/
+.main-nav {
+    display: none;
 }
 
 /* banner section*/
@@ -290,6 +307,10 @@ a {
     font-size: 14px;
 }
 
+.project-link.active {
+    color: crimson;
+}
+
 .projects .projects-content {
     display: flex;
     justify-content: space-around;
@@ -397,6 +418,7 @@ a {
     flex-direction: column;
     align-items: center;
     gap: 20px;
+    transition: all 0.3s ease;
 }
 
 .services .services-content .item:hover {
@@ -488,6 +510,44 @@ a {
     }
 
     .side-section {
-        width: 100%;
+        width: 100vw;
+        transition: all 0.3s ease;
     }
+
+    .side-section.hide{
+        width: 0;
+        transition: all 0.3s ease;
+    }
+
+    .main-section {
+        margin-left: 0;
+        /* width: 0; */
+    }
+
+    .sidebar .container .close-btn {
+        display: initial;
+        display: flex;
+        justify-content: end;
+        color: #fff;
+        padding-right: 15px;
+    }
+
+    .sidebar .container .close-btn i {
+        font-size: 20px;
+    }
+
+    .main-nav {
+        display: flex;
+        justify-content: end;
+        padding: 10px;
+        background-color: #111;
+        color: #fff;
+        position: sticky;
+        top: 0;
+    }
+
+    .projects .projects-content {
+        justify-content: center;
+    }
+
 }
