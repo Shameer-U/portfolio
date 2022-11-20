@@ -31,6 +31,9 @@ projectLinks.forEach((projectLink) => {
 
 });
 
+//triggering click at start
+document.getElementById('projectAll').click();
+
 //hide side section  when clicked on side sections links and screen size is < 768
 
 const links = document.querySelectorAll('.nav-link');
@@ -62,10 +65,7 @@ const removeHide = () => {
 window.onresize = removeHide;
 
 //close side section on clicking close icon
-document.querySelector('.close-btn i').addEventListener('click', function(e) {
-    document.querySelector('.side-section').classList.contains('hide');
-    document.querySelector('.side-section').classList.remove('hide');
-
+document.querySelector('.close-icon').addEventListener('click', function(e) {
     document.querySelector('.side-section').classList.add('hide');
 });
 
@@ -102,3 +102,9 @@ window.onscroll = () => {
         }
     })
 };
+
+
+//slide animation starts only after is page is loaded.
+window.onload = () =>  {
+    document.querySelector('.banner-content').classList.add('slide');
+}
