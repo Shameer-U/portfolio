@@ -177,6 +177,7 @@ a {
     background-size: cover;
     background-attachment: fixed;
     height: 100vh;
+    width: 100%;
     color: #fff;
     min-height: 500px;
 }
@@ -566,6 +567,7 @@ a {
 
     .main-section {
         margin-left: 0;
+        width: 100%;
         /* width: 0; */
     }
 
