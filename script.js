@@ -108,4 +108,3 @@ window.onscroll = () => {
 // window.onload = () =>  {
 //     document.querySelector('.banner-content').classList.add('slide');
 // }
-document.querySelector('.banner-content').classList.add('slide');
