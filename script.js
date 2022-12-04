@@ -105,6 +105,7 @@ window.onscroll = () => {
 
 
 //slide animation starts only after is page is loaded.
-window.onload = () =>  {
-    document.querySelector('.banner-content').classList.add('slide');
-}
+// window.onload = () =>  {
+//     document.querySelector('.banner-content').classList.add('slide');
+// }
+document.querySelector('.banner-content').classList.add('slide');
