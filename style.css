@@ -65,7 +65,7 @@ a {
 
 .profile .img img{
     width: 100%;
-    height: 100%;
+    /* height: 100%; */
     object-fit: cover;
     border-radius: 50%;
     border: 5px solid crimson;
@@ -393,7 +393,7 @@ a {
 
 .project .project-details {
     border-top: 1px solid #a8a9b4;
-    height: 150px;
+    height: 170px;
     padding: 10px;
     display: flex;
     flex-direction: column;
