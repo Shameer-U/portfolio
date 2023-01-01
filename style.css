@@ -396,6 +396,11 @@ a {
     color: crimson;
 }
 
+.project-link.active:after {
+    width: 100%;
+    background-color: crimson;
+}
+
 .projects .projects-content {
     display: flex;
     justify-content: space-around;

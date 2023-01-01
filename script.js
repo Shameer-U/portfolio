@@ -108,3 +108,7 @@ window.onscroll = () => {
 // window.onload = () =>  {
 //     document.querySelector('.banner-content').classList.add('slide');
 // }
+
+//making home link active at initial loading
+const homeLink = document.querySelector(`[href='#home']`).parentElement;
+homeLink.classList.add('active');
