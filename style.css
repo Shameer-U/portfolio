@@ -443,13 +443,13 @@ a {
 
 .project .project-details {
     border-top: 1px solid #a8a9b4;
-    /* height: 170px; */
-    height: 100px;
+    height: 150px;
+    /* height: 100px; */
     padding: 10px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    gap: 10px;
+    /* gap: 10px; */
     background-color: #fff;
 }
 
